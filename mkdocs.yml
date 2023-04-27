@@ -11,7 +11,7 @@ theme:
   palette:
     primary: pink
   font:
-    text: Montserrat
+    text: Roboto
     code: Roboto Mono
 
   features:
