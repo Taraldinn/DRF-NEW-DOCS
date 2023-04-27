@@ -11,7 +11,7 @@ theme:
   palette:
     primary: pink
   font:
-    text: Roboto
+    text: Roboto Mono
     code: Roboto Mono
 
   features:
