@@ -45,11 +45,10 @@ markdown_extensions:
       permalink: true
       toc_depth: 1
   
-
 plugins:
-  - search
+  - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-      
+
 
 nav:
  - Home: 'index.md'
