@@ -21,10 +21,17 @@ theme:
     - content.code.copy
     - content.code.annotate
     - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
 
 
 
 markdown_extensions:
+  - footnotes
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -32,10 +39,18 @@ markdown_extensions:
       pygments_lang_class: true
       guess_lang: true
       #default_lang: python3
+      
+  - toc:
+      title: On this page
+      permalink: true
+      toc_depth: 1
+  
 
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
+plugins:
+  - search
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      
 
 nav:
  - Home: 'index.md'
